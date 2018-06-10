@@ -9,7 +9,7 @@ def getItemsFromFile(): # Bestand Uitlees functie
 
     listOfItems = [] # Array aanmaken voor de gevonden gegevens
     for item in file: # Door elke regel van het bestand heen loopen
-        listOfItems.append(item.strip(linebreak).split(', ')) # linebreak weghalen, en aan het einde van de array toevoegen.
+        listOfItems.append(item.strip(linebreak).split(', ')) # linebreak weghalen, en aan het einde van de array toevoegen, gesplitst met ,'s)
 
     file.close() # bestand afsluiten
     return listOfItems # Array met gelezen regels/items terug geven aan de functie uitkomst
